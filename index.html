@@ -1,0 +1,1346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+     <!-- Font Awersome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="aos.css">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Demo</title>
+
+    <!-- Header CSS  -->
+    <style type="text/css">
+     .my-nav{
+      position:absolute !important;
+      z-index:999999999;
+      width:100%;
+    } 
+    .fixed{
+            position: fixed !important;
+            width: 100%;
+            top: 0;
+            z-index: 999999999 !important;
+            /*height: 70px;*/
+    }
+    .animate__animated.animate__backInDown{
+          --animate-duration: 2s;
+    }
+
+    @media only screen and (max-width: 992px) {
+    .my-nav{
+      position:absolute; !important;
+      z-index:0;
+ 
+    } 
+   }
+
+   .navbar-brand{
+    padding-right: 25px;
+    font-size: 20px !important;
+    font-weight: 560;
+   }
+
+    #more {display: none;}
+
+    </style>
+    
+  </head>
+  <body onLoad="preloader()">
+
+    <!--Pre loader start-->
+    <div id="loading">
+        
+    </div>
+    <!--Pre loader end-->
+    
+     <!---Navbar start-->
+     
+    <div class="content1">
+        <nav class="navbar navbar-expand-lg navbar-light my-nav">
+          <div class="container">
+          <a class="navbar-brand" href="#" style="font-size:1.25rem !important;">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              
+              
+              <li class="nav-item dropdown">
+                <a class="navbar-brand" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Live Classes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="navbar-brand" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Video Library
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="navbar-brand" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Course
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="navbar-brand" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Book
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="navbar-brand" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Board
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="navbar-brand" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Exam 
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>    
+            </ul>
+          </div>
+         </div>
+        </nav>
+
+        <!--navbar End-->
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <p data-aos="fade-up" class="heading1" style="margin-top: 130px;">Clarify your <span style="color: purple;">doughts</span> in Your language.</p>
+              <div class="text-center mt-4">
+                  <button data-aos="fade-up" type="button" class="btn btn-danger" style="border-radius: 10px;"><i class="fa fa-download" aria-hidden="true"></i> Ask Your doubt know</button>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="heading2">
+                   <div class="lol">
+                      
+                   </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        
+
+        <div class="container" style="margin-top: 150px; padding-bottom: 70px;">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-lg-3">
+              
+              <div data-aos="zoom-in" class="card mb-3 card-deals" style="max-width: 100%;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="images/note-taking-1400x1050.png" class="card-img card-img1" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title card-heading text-center">40,000+</h5>
+                        <p class="card-details text-center">Doubts cleared</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-3">
+              
+              <div data-aos="zoom-in" class="card mb-3 card-deals" style="max-width: 100%;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="images/sept2018_technologyupdate_600x400.png" class="card-img card-img1" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title card-heading text-center">20+</h5>
+                        <p class="card-details text-center">State Boards</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+            </div>
+            <div data-aos="zoom-in" class="col-md-6 col-sm-6 col-lg-3">
+              
+              <div class="card mb-3 card-deals" style="max-width: 100%;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="images/Why-you-should-include-video-on-your-website.png" class="card-img card-img1" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title card-heading text-center">1,000,000+</h5>
+                        <p class="card-details text-center">Video Lectures</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+            </div>
+            <div data-aos="zoom-in" class="col-md-6 col-sm-6 col-lg-3">
+              
+              <div class="card mb-3 card-deals" style="max-width: 100%;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="images/lecture-capture-best-practices-1-1400x550.jpg" class="card-img card-img1" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title card-heading text-center">5000+</h5>
+                        <p class="card-details text-center">Books covered</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+
+    </div>     
+   
+  
+    <!-- content1 ending-->
+ 
+    <!--Content2  Start-->
+    
+    <div class="content2">
+
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-sm-12 col-md-8 col-lg-8">
+               
+               <p class="heading1" data-aos="zoom-out">Solve your doubts<span style="color: purple;"> faster.</span></p>
+               
+               
+                  <div class="row" data-aos="fade-left">
+                    <div class="col-sm-2 col-md-2">
+                      <img src="images/earth.png" class="img-fluid" alt="Responsive image" style=" height: 70px !important; width: 70px !important;">
+                      
+                    </div>
+                    <div class="col-sm-10 col-md-10">
+                      <span class="heading3">Accessible everywhere</span><br>
+                      <span class="heading4">Access to quality education anytime, anywhere</span>
+                    </div>
+                  </div><br><br>
+
+                  <div class="row" data-aos="fade-left">
+                    <div class="col-sm-2 col-md-2">
+                      <img src="images/earth.png" style=" height: 70px !important; width: 70px !important;" class="img-fluid" alt="Responsive image">
+                      
+                    </div>
+                    <div class="col-sm-10 col-md-10">
+                      <span class="heading3">1 million+ videos</span><br>
+                      <span class="heading4">Unlimated access to video solution</span>
+                    </div>
+                  </div><br><br>
+
+
+            </div>
+            
+            <div class="col-sm-12 col-md-4 col-lg-4" data-aos="fade-left">
+              <img src="images/heloloo.png" class="img-fluid" alt="Responsive image" style="margin-top: 120px;">
+            </div>
+          
+          </div>
+        </div>
+
+        
+        <div class="text-center heading3" data-aos="flip-left" style="color: purple; margin-top: 150px;">How It works ?</div>
+        
+
+        
+
+            
+            <div style="padding: 60px;">
+            <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+             
+              <div class="carousel-inner" style="margin-bottom: 80px;">
+                <div class="carousel-item active">
+                 
+                  
+                            <div class="card-deck" style="border-style: none !important;">
+                              <div class="card">
+                                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="img-fluid rounded-circle" alt="..."
+                                >
+                              </div>
+                              <div class="card">
+                                <img src="https://images.unsplash.com/photo-1536064479547-7ee40b74b807?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="img-fluid rounded-circle" alt="...">
+                              </div>
+                              <div class="card">
+                                <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" class="img-fluid rounded-circle" alt="...">
+                              </div>
+                            </div>
+
+                </div>
+                <div class="carousel-item">
+                  <div class="card-deck">
+
+                              <div class="card">
+                                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="img-fluid rounded-circle" alt="...">
+                              </div>
+                              <div class="card">
+                                <img src="https://images.unsplash.com/photo-1536064479547-7ee40b74b807?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="img-fluid rounded-circle" alt="...">
+                              </div>
+                              <div class="card">
+                                <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" class="img-fluid rounded-circle" alt="...">
+                              </div>
+                            </div>
+
+                </div>
+                <div class="carousel-item">
+                    
+                    <div class="card-deck">
+                              <div class="card">
+                                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="img-fluid rounded-circle" alt="...">
+                              </div>
+                              <div class="card">
+                                <img src="https://images.unsplash.com/photo-1536064479547-7ee40b74b807?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="img-fluid rounded-circle" alt="...">
+                              </div>
+                              <div class="card">
+                                <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" class="img-fluid rounded-circle" alt="...">
+                              </div>
+                            </div>
+
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            </div>
+            </div>
+            
+
+
+
+
+        <div class="text-center mt-4" style="padding-bottom: 100px;">
+                  <button data-aos="zoom-in" type="button" class="btn btn-danger" style="border-radius: 10px;">Clarify your doubt know!</button>
+        </div>
+    
+
+    </div>
+    
+
+
+    <!--Content2 End-->
+
+    <!--Content 3 start-->
+    
+    <div class="content3">
+        <p class="heading1 text-center" data-aos="flip-left"><span style="color: purple;">LIVE</span>Classes</p>
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              
+              <div class="heading2">
+                   <div class="lol">
+                      
+                   </div> 
+              </div>
+
+            </div>
+            
+            <div class="col-sm-12 col-md-6 col-lg-6" data-aos="fade-left" style="margin-top: 120px;">
+              
+               <div class="container">
+                 <div class="row">
+                   <div class="col-sm-2 col-md-2">
+                     <img class="icon" src="images/earth.png" height="70px;" width="70px;">
+                   </div>
+                   <div class="col-sm-10 col-md-10">
+                     
+                       <span class="heading3">Accessible everywhere</span>
+                       <div style="margin-top: 10px;">
+                          <span class="heading4">Access to quality education anytime, anywhere</span> 
+                       </div>
+
+                   </div>
+                 </div>
+               </div><br><br>
+
+               <div class="container">
+                 <div class="row">
+                   <div class="col-sm-2 col-md-2">
+                     <img class="icons" src="images/Why-you-should-include-video-on-your-website.png" height="70px;" width="70px;">
+                   </div>
+                   <div class="col-sm-10 col-md-10">
+                     
+                       <span class="heading3">Interactive Sessions</span>
+                       <div style="margin-top: 10px;">
+                          <span class="heading4">Small group of maximum student-teacher interaction</span> 
+                       </div>
+
+                   </div>
+                 </div>
+               </div><br><br>
+
+               <div class="container">
+                 <div class="row">
+                   <div class="col-sm-2 col-md-2">
+                     <img class="icons" src="images/lecture.png" height="70px;" width="70px;">
+                   </div>
+                   <div class="col-sm-10 col-md-10">
+                     
+                       <span class="heading3">Expert Teachers</span>
+                       <div style="margin-top: 10px;">
+                          <span class="heading4">Unlimited access to video solutions</span> 
+                       </div>
+
+                   </div>
+                 </div>
+               </div><br><br>
+
+
+            </div>
+          
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 70px; padding-bottom: 100px;">
+                  <p data-aos="flip-left" class="heading5">FIRST CLASS FREE</p>
+                  <button data-aos="zoom-in" type="button" class="btn btn-danger" style="border-radius: 10px;">Book a class now!</button>
+        </div>
+
+    </div>
+
+    <!--content 3 End--->
+
+    <!--content 4 start-->
+    <div class="content4">
+        <p class="heading1 text-center" data-aos="flip-left" style="padding-top: 120px !important;"><span style="color: purple;">JEE</span> Mains & Advanced preperation</p>
+
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              
+               <div class="container">
+               <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="heading2">
+                           <div class="lol1">
+                              
+                           </div> 
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6" style="margin-top: 180px;">
+                      <p class="heading6" data-aos="zoom-out">Micro concept videos</p><br><br>
+                      <div data-aos="fade-left">
+                          <span class="heading4" style="font-weight: 900;">Find multilingual video explations important and frequently confused concepts from every subject</span>
+                      </div>
+                    </div>
+               </div>
+               </div>
+                    
+            </div>
+            <div class="carousel-item">
+
+               <div class="container">
+               <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="heading2">
+                           <div class="lol1">
+                              
+                           </div> 
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6" style="margin-top: 180px;">
+                      <p class="heading6" data-aos="zoom-out">Micro concept videos</p><br><br>
+                      <div data-aos="fade-left">
+                          <span class="heading4" style="font-weight: 900;">Find multilingual video explations important and frequently confused concepts from every subject</span>
+                      </div>
+                    </div>
+               </div>
+               </div>
+              
+            </div>
+            <div class="carousel-item">
+
+               <div class="container">
+               <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="heading2">
+                           <div class="lol1">
+                              
+                           </div> 
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6" style="margin-top: 180px;">
+                      <p class="heading6" data-aos="zoom-out">Micro concept videos</p><br><br>
+                      <div data-aos="fade-left">
+                          <span class="heading4" style="font-weight: 900;">Find multilingual video explations important and frequently confused concepts from every subject</span>
+                      </div>
+                    </div>
+                </div>
+                </div>
+              
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        
+        <div class="text-center" style="margin-top: 70px; padding-bottom: 100px;">
+                  <button data-aos="zoom-in" data-aos="flip-left type="button" class="btn btn-danger" style="border-radius: 10px;">Prepare for JEE now</button>
+        </div>
+
+    </div>
+
+    <!--Content 4 end-->
+
+    <!--content 5 start-->
+
+    <div class="content5">
+        <p class="heading1 text-center" data-aos="flip-left" style="padding-top: 120px !important;"><span style="color: purple;">NEET </span>preperation</p>
+
+
+         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              
+               <div class="container">
+               <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="heading2">
+                           <div class="lol1">
+                              
+                           </div> 
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6" style="margin-top: 180px;">
+                      <p class="heading6" data-aos="zoom-out">Micro concept videos</p><br><br>
+                      <div data-aos="fade-left">
+                          <span class="heading4" style="font-weight: 900;">Find multilingual video explations important and frequently confused concepts from every subject</span>
+                      </div>
+                    </div>
+               </div>
+               </div>
+                    
+            </div>
+            <div class="carousel-item">
+
+               <div class="container">
+               <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="heading2">
+                           <div class="lol1">
+                              
+                           </div> 
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6" style="margin-top: 180px;">
+                      <p class="heading6" data-aos="zoom-out">Micro concept videos</p><br><br>
+                      <div data-aos="fade-left">
+                          <span class="heading4" style="font-weight: 900;">Find multilingual video explations important and frequently confused concepts from every subject</span>
+                      </div>
+                    </div>
+               </div>
+               </div>
+              
+            </div>
+            <div class="carousel-item">
+
+               <div class="container">
+               <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="heading2">
+                           <div class="lol1">
+                              
+                           </div> 
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6" style="margin-top: 180px;">
+                      <p class="heading6" data-aos="zoom-out">Micro concept videos</p><br><br>
+                      <div data-aos="fade-left">
+                          <span class="heading4" style="font-weight: 900;">Find multilingual video explations important and frequently confused concepts from every subject</span>
+                      </div>
+                    </div>
+               </div>
+               </div>
+              
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        
+        <div class="text-center" style="margin-top: 70px; padding-bottom: 100px;">
+                  <button data-aos="zoom-in" type="button" class="btn btn-danger" style="border-radius: 10px;">Prepare for JEE now</button>
+        </div>
+
+    </div>
+
+    <!--content 5 end-->
+
+
+    <!--content 6 start-->
+    
+    <div class="content2" style="padding-bottom: 100px;">
+        <p class="heading1 text-center" data-aos="flip-left" style="padding-top: 120px !important;"><span style="color:purple;">Explore the subject with us!</span></p>
+        
+        <div class="container">
+        
+        <div class="row">
+            <div class="col-md-2 offset-md-1 col-sm-6 book-card">
+                
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/Screenshot (335).png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Maths</h5>
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-md-2 offset-md-1 col-sm-6 book-card">
+                
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/Screenshot (339).png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Physics</h5>
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-md-2 offset-md-1 col-sm-6 book-card">
+                
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/Screenshot (337).png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Chemistry</h5>
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-md-2 offset-md-1 col-sm-6 book-card">
+                
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/Screenshot (338).png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Biology</h5>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+        <span id=dots>.</span>
+        <span id="more">
+
+        
+        <div class="row">
+            <div class="col-md-2 offset-md-1 col-sm-6 book-card">
+                
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/Screenshot (335).png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Maths</h5>
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-md-2 offset-md-1 col-sm-6 book-card">
+                
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/Screenshot (339).png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Physics</h5>
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-md-2 offset-md-1 col-sm-6 book-card">
+                
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/Screenshot (337).png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Chemistry</h5>
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-md-2 offset-md-1 col-sm-6 book-card">
+                
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/Screenshot (338).png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Biology</h5>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+       
+       </span>
+       
+        </div>
+        
+
+        <div class="container">
+        <a onclick="myFunction()" id="myBtn" style="float: right !important; cursor: pointer; margin-top: 30px; color: #E74C3C; font-size: 20px;">View all</a>    
+        </div>
+        
+
+    </div>
+
+    <!--content 6 end-->
+
+    <!--content 7 start-->
+    
+    <div class="content7">
+        <p class="heading1 text-center" data-aos="flip-left" style="padding-top: 120px !important;"><span style="color:purple;">Free access</span><span> to 5000+ books</span></p>
+        <div class="text-center" data-aos="zoom-in">
+            <span class="heading4 text-center">Get access to virtual library of 5000+ text books</span><br>
+            <span class="heading4 text-center">and reference books of various stateboards and competitive exams.</span>
+        </div><br><br><br>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+                
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/hc_verma.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">HC Verma</h5>
+                  </div>
+                </div>
+            
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+             
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/hc_verma.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">NCERT</h5>
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+              
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/hc_verma.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">KC Shina</h5>
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+                
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/hc_verma.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Errorless</h5>
+                  </div>
+                </div>
+            
+            </div>;
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+              
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/hc_verma.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Tata McGraw Hill</h5>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div><br><br>
+
+
+
+         <div class="container" style="padding-bottom: 100px;">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+                
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/hc_verma.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">RD Sharma</h5>
+                  </div>
+                </div>
+            
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+             
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/hc_verma.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Pardeep's</h5>
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+              
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/hc_verma.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">SL Arora</h5>
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+                
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/hc_verma.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Maths</h5>
+                  </div>
+                </div>
+            
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+              
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/hc_verma.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Maths</h5>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+
+    <!--content 7 end-->
+
+    <!--content 8 start-->
+    
+    <div class="content8">
+        <p class="heading1 text-center" data-aos="flip-left" style="padding-top: 120px !important;"><span style="color:purple;">State Boards</span></p>
+        <div class="text-center">
+            <span class="heading4 text-center" data-aos="zoom-in">Learn your board syllabus from the best teachers with us.</span><br>
+        </div><br><br><br>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+                
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/mh1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Maharastra</h5>
+                  </div>
+                </div>
+            
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+             
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/pj.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Punjab</h5>
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+              
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/ap.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Andhra Paredsh</h5>
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+                
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/wb.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">West Bengal</h5>
+                  </div>
+                </div>
+            
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+              
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/up.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Uttar Pradesh</h5>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div><br><br>
+
+
+
+         <div class="container" style="padding-bottom: 100px;">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+                
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/kerla.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Kerla</h5>
+                  </div>
+                </div>
+            
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+             
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/ap.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Rajasthan</h5>
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+              
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/gj.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Gujarat</h5>
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+                
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/tn.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Tamil Nadu</h5>
+                  </div>
+                </div>
+            
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 book-card" style="margin-left: 30px;">
+              
+                <div class="card card-deals1" style="width: 100%;">
+                  <img src="images/mp1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-details11">Madhya Pradesh</h5>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+
+    <!--content 8 end-->
+
+
+    <!--content 9 start-->
+    <div class="content9" style="padding-bottom: 100px;">
+        <div>
+             <p class="heading1 text-center" style="padding-top: 70px !important;"><span>Meet our export tutors</span></p>
+        </div>
+        <div class="container">
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  
+                  <div class="row">
+                      <div class="col-md-5 col-sm-12">
+                          
+                          <div class="row">
+                              <div class="col-md-6 col-sm-12">
+                                 <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="..." height="150px" width="150px" class="rounded-circle cnt-round"> 
+                              </div><br>
+                              <div class="col-md-6 col-sm-12">
+                                  <div style="border-radius: 10px; background-color: white; box-shadow: 3px 6px #888888; padding-top: 20px; padding-left: 20px;">
+                                      <span style="font-size: 20px; font-weight: 700; color: purple;" class="cnt-name">Shivani Arora</span><br><br>
+                                      <span class="cnt-desc">lapspn kauye kaiyr</span><br>
+                                      <span class="cnt-desc">jskydeb jnjka</span><br>
+                                      <span class="cnt-desc">jskydeb jnjka</span>
+                                  </div>
+                              </div></br>
+                          </div>
+                      
+                      </div>
+                      <div class="col-md-5 offset-md-2 col-sm-12 ">
+                          
+                          <div class="row">
+                              <div class="col-md-6 col-sm-12 shivani">
+                                 <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="..." height="150px" width="150px" class="rounded-circle cnt-round"> 
+                              </div>
+                              <div class="col-md-6 col-sm-12 shivani">
+                                  <div style="border-radius: 10px; background-color: white; box-shadow: 3px 6px #888888; padding-top: 20px; padding-left: 20px;">
+                                      <span style="font-size: 20px; font-weight: 700; color: purple;" class="cnt-name">Shivani Arora</span><br><br>
+                                      <span class="cnt-desc">lapspn kauye kaiyr</span><br>
+                                      <span class="cnt-desc">jskydeb jnjka</span><br>
+                                      <span class="cnt-desc">jskydeb jnjka</span>
+                                  </div>
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+
+                </div>
+                <div class="carousel-item">
+                  
+                  <div class="row">
+                      <div class="col-md-5 col-sm-12">
+                          
+                          <div class="row">
+                              <div class="col-md-6 col-sm-12 shivani">
+                                 <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="..." height="150px" width="150px" class="rounded-circle cnt-round"> 
+                              </div>
+                              <div class="col-md-6 col-sm-12 shivani">
+                                  <div style="border-radius: 10px; background-color: white; box-shadow: 3px 6px #888888; padding-top: 20px; padding-left: 20px;">
+                                      <span style="font-size: 20px; font-weight: 700; color: purple;" class="cnt-name">Shivani Arora</span><br><br>
+                                      <span class="cnt-desc">lapspn kauye kaiyr</span><br>
+                                      <span class="cnt-desc">jskydeb jnjka</span><br>
+                                      <span class="cnt-desc">jskydeb jnjka</span>
+                                  </div>
+                              </div>
+                          </div>
+
+                      </div>
+                      <div class="col-md-5 offset-md-2 col-sm-12 shivani">
+                          
+                          <div class="row">
+                              <div class="col-md-6 col-sm-12">
+                                 <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="..." height="150px" width="150px" class="rounded-circle cnt-round"> 
+                              </div>
+                              <div class="col-md-6 col-sm-12 shivani">
+                                  <div style="border-radius: 10px; background-color: white; box-shadow: 3px 6px #888888; padding-top: 20px; padding-left: 20px;">
+                                      <span style="font-size: 20px; font-weight: 700; color: purple;" class="cnt-name">Shivani Arora</span><br><br>
+                                      <span class="cnt-desc">lapspn kauye kaiyr</span><br>
+                                      <span class="cnt-desc">jskydeb jnjka</span><br>
+                                      <span class="cnt-desc">jskydeb jnjka</span>
+                                  </div>
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  
+
+                </div>
+              </div>
+            </div><br><br>
+
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  
+                  <div class="row">
+                      <div class="col-md-5 col-sm-12">
+                         
+                         <div class="row">
+                              <div class="col-md-6 col-sm-12 shivani">
+                                 <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="..." height="150px" width="150px" class="rounded-circle"> 
+                              </div>
+                              <div class="col-md-6 col-sm-12 shivani">
+                                  <div style="border-radius: 10px; background-color: white; box-shadow: 3px 6px #888888; padding-top: 20px; padding-left: 20px;">
+                                      <span style="font-size: 20px; font-weight: 700; color: purple;" class="cnt-name">Shivani Arora</span><br><br>
+                                      <span class="cnt-desc">lapspn kauye kaiyr</span><br>
+                                      <span class="cnt-desc">jskydeb jnjka</span><br>
+                                      <span class="cnt-desc">jskydeb jnjka</span>
+                                  </div>
+                              </div>
+                          </div>
+
+                      </div>
+                      <div class="col-md-5 offset-md-2 col-sm-12">
+                          
+                          <div class="row">
+                              <div class="col-md-6 col-sm-12 shivani">
+                                 <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="..." height="150px" width="150px" class="rounded-circle"> 
+                              </div>
+                              <div class="col-md-6 col-sm-12 shivani">
+                                  <div style="border-radius: 10px; background-color: white; box-shadow: 3px 6px #888888; padding-top: 20px; padding-left: 20px;">
+                                      <span style="font-size: 20px; font-weight: 700; color: purple;" class="cnt-name">Shivani Arora</span><br><br>
+                                      <span class="cnt-desc">lapspn kauye kaiyr</span><br>
+                                      <span class="cnt-desc">jskydeb jnjka</span><br>
+                                      <span class="cnt-desc">jskydeb jnjka</span>
+                                  </div>
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+
+                </div>
+                <div class="carousel-item">
+                  
+                  <div class="row">
+                      <div class="col-md-5">
+                          
+                          <div class="row">
+                              <div class="col-md-6 col-sm-12 shivani">
+                                 <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="..." height="170px" width="170px" class="rounded-circle"> 
+                              </div>
+                              <div class="col-md-6 col-sm-12 shivani">
+                                 <div style="border-radius: 10px; background-color: white; box-shadow: 3px 6px #888888; padding-top: 20px; padding-left: 20px;">
+                                      <span style="font-size: 20px; font-weight: 700; color: purple;" class="cnt-name">Shivani Arora</span><br><br>
+                                      <span class="cnt-desc">lapspn kauye kaiyr</span><br>
+                                      <span class="cnt-desc">jskydeb jnjka</span><br>
+                                      <span class="cnt-desc">jskydeb jnjka</span>
+                                  </div>
+                              </div>
+                          </div>
+
+                      </div>
+                      <div class="col-md-5 offset-md-2">
+                         
+                          <div class="row">
+                              <div class="col-md-6 col-sm-12 shivani">
+                                 <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="..." height="170px" width="170px" class="rounded-circle"> 
+                              </div>
+                              <div class="col-md-6 col-sm-12 shivani">
+                                  <div style="border-radius: 10px; background-color: white; box-shadow: 3px 6px #888888; padding-top: 20px; padding-left: 20px;">
+                                      <span style="font-size: 20px; font-weight: 700; color: purple;" class="cnt-name">Shivani Arora</span><br><br>
+                                      <span class="cnt-desc">lapspn kauye kaiyr</span><br>
+                                      <span class="cnt-desc">jskydeb jnjka</span><br>
+                                      <span class="cnt-desc">jskydeb jnjka</span>
+                                  </div>
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+                  
+
+                </div>
+              </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--content 9 ends-->
+     
+
+    <!--content 10 start-->
+    <div class="content10">
+        <p class="heading1 text-center" data-aos="flip-left">See what our student have to say</p>
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              
+              <div class="heading2">
+                   <div class="lol">
+                      
+                   </div> 
+              </div>
+
+            </div>
+            
+            <div class="col-sm-12 col-md-6 col-lg-6" style="margin-top: 120px;">
+               
+               <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                    <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="..." height="170px" width="170px" class="rounded-circle" style=" margin-top: 20px;"> 
+                    </div>
+                    <div class="col-md-6 col-sm-12 content1-img">
+                        <div style="border-radius: 10px; background-color: white; box-shadow: 3px 6px #888888; padding-top: 20px; padding-left: 20px; padding-bottom: 20px;">
+                                <span style="font-size: 20px; font-weight: 700; color: purple;">Shivani Arora</span><br><br>
+                                <span>lapspn kauye kaiyr</span><br>
+                                <span>jskydeb jnjka</span><br>
+                                <span>jskydeb jnjka</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+          
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 70px; padding-bottom: 60px;">
+                  <button type="button" class="btn btn-danger" style="border-radius: 10px; font-size: 22px; font-weight: 700;">Download the app for free</button>
+        </div>      
+        
+    </div>
+    <!--content 10 ends-->
+
+
+
+
+    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+
+
+      $(window).scroll(function (){
+          if($(this).scrollTop() > 10){
+             $('.my-nav').addClass('fixed');
+          }else{
+            $('.my-nav').removeClass('fixed');
+          }
+      });
+
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+      if (scroll > 10) {
+        $(".my-nav").css("background" , "#F7C472");
+      }
+
+      else{
+          $(".my-nav").css("background" , "transparent");   
+      }
+  })
+});       
+  
+
+     
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<script src="aos.js"></script>
+    <script type="text/javascript">
+        AOS.init({
+            duration: 2000,
+
+        });
+</script>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <script>
+    var preload= document.getElementById('loading');
+    
+    function preloader(){
+         preload.style.display='none';  
+    }
+</script>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
